@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Width in Bootstrap</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="searchBoxContainer">
+        <form id="searchForm">
+            <div class="input-group">
+                <input type="text" class="form-control custom-input" id="searchBox" placeholder="Search" style="border-radius: 20px 0 0 20px;">
+                <button id="searchButton" type="submit" class="btn btn-dark" style="border-radius: 0 20px 20px 0;"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+        <h1 class="text-light toHide" id="newArrival" style="padding-top: 60px;">New Arrival</h1>
+            <!-- Product Box 1 -->
+            <div class="col-md-4 mb-4 cardHide" id="menCard1">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <img src="~/Image/men/mp1.jpg" class="card-img-top" alt="Product 1" data-product-id="1">
+                    <div class="card-body">
+                    <h5 class="card-title text-center">Nike Sweater Repel</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">    
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><img src="~/Image/men/mp1.jpg" class="card-img-top" alt="Product 1"></h5>
+                        </div>
+                        <div class="modal-body">
+                        <h5 class="card-title">Nike Sweater Repel</h5>
+                            <p class="card-text">₱1 ,495</p>
+                            <h5>Sizes</h5>
+                            <button class="btn btn-outline-dark">40</button>
+                            <button class="btn btn-outline-dark">41</button>
+                            <button class="btn btn-outline-dark">42</button>
+                            <button class="btn btn-outline-dark">43</button>
+                            <p class="mt-5 mb-0">Description:</p>
+                            <p class="lead">The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-dark addToCartBtn OrdBtn">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Box 2 -->
+            <div class="col-md-4 mb-4 cardHide" id="womenCard1">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <img src="/Image/women/wp1.jpg" class="card-img-top" alt="Product 2" data-product-id="2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ribbed Tank Top</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><img src="/Image/women/wp1.jpg" class="card-img-top" alt="Product 2"></h5>
+                        </div>
+                        <div class="modal-body">
+                            <h5 class="card-title">Ribbed Tank Top</h5>
+                            <p class="card-text">₱1,364</p>
+                            <h5>Sizes</h5>
+                            <button class="btn btn-outline-dark">XS</button>
+                            <button class="btn btn-outline-dark">S</button>
+                            <button class="btn btn-outline-dark">M</button>
+                            <p class="mt-5 mb-0">Description:</p>
+                            <p class="lead">The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-dark addToCartBtn OrdBtn">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Box 3 -->
+            <div class="col-md-4 mb-4 cardHide" id="kidsCard1">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-product-id="3">
+                    <img src="/Image/kids/kp1.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">French Terry Full-Zip Hoodie</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 3 -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><img src="/Image/kids/kp1.jpg" class="card-img-top" alt="Product 3">  </h5>
+                        </div>
+                        <div class="modal-body">
+                            <h5 class="card-title">French Terry Full-Zip Hoodie</h5>
+                            <p class="card-text">₱1,643</p>
+                            <h5>Sizes</h5>
+                            <button class="btn btn-outline-dark">S</button>
+                            <button class="btn btn-outline-dark">M</button>
+                            <button class="btn btn-outline-dark">L</button>
+                            <p class="mt-5 mb-0">Description:</p>
+                            <p class="lead">The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-dark addToCartBtn OrdBtn">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Box 4 -->
+            <div class="col-md-4 mb-4 cardHide" id="womenCard2">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" data-product-id="4">
+                    <img src="/Image/women/wp2.jpg  " class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mid-Rise 7/8 Joggers</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 4 -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><img src="/Image/women/wp2.jpg" class="card-img-top" alt="Product 1"></h5>
+                        </div>
+                        <div class="modal-body">
+                            <h5 class="card-title">Mid-Rise 7/8 Joggers</h5>
+                            <p class="card-text">₱1,695</p>
+                            <h5>Sizes</h5>
+                            <button class="btn btn-outline-dark">S</button>
+                            <button class="btn btn-outline-dark">M</button>
+                            <button class="btn btn-outline-dark">L</button>
+                            <button class="btn btn-outline-dark">XL</button>
+                            <p class="mt-5 mb-0">Description:</p>
+                            <p class="lead">The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-dark addToCartBtn OrdBtn">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+    <script>
+                //search and triggered btn
+
+        const searchForm = document.getElementById("searchForm");
+
+        // Add a submit event listener to the form
+        searchForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+            filterProducts(); // Call your search function here (e.g., filterProducts())
+        });
+
+        const filterButton = document.getElementById("filterButton");
+        filterButton.addEventListener("click", function () {
+            filterProducts();
+        });
+
+        function filterProducts() {
+            const searchTerm = document.getElementById("searchBox").value.toLowerCase();
+            console.log("Search Term:", searchTerm);
+
+            const productCards = document.querySelectorAll(".col-md-4, .toHide");
+
+            productCards.forEach((card) => {
+                const cardTitles = card.querySelectorAll(".card-title, .card-title2");
+                let shouldDisplay = false;
+
+                cardTitles.forEach((titleElement) => {
+                    const titleText = titleElement.textContent.toLowerCase();
+                    if (titleText.includes(searchTerm)) {
+                        shouldDisplay = true;
+                    }
+                });
+
+                if (shouldDisplay || searchTerm.trim() === "") {
+                    card.style.display = "block";       
+                } else {    
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+
+
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
